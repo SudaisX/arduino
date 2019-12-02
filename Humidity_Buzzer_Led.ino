@@ -47,29 +47,33 @@ void loop() {
   digitalWrite(f, HIGH); //
   digitalWrite(g, LOW);
   digitalWrite(7, LOW);
+  Serial.println ("-----------------------------------------");
   Serial.print ("Humidity: ");
   Serial.print (h);
   Serial.print (" %\t");
-  Serial.print ("Humidity < 40% hense 'L' \t");
-  Serial.print ("Relay = OFF\t");
+  Serial.println ("Humidity < 40% hense 'L' \t");
+  Serial.println ("Relay = OFF\t");
+  Serial.println ("-----------------------------------------");
   
   
   
  }else{
   if(h > 40 && h < 71){
     
-   digitalWrite(b, LOW);
+   digitalWrite(b, HIGH);
    digitalWrite(c, HIGH); //
    digitalWrite(d, HIGH); //
    digitalWrite(e, HIGH); //
    digitalWrite(f, HIGH); //
    digitalWrite(g, LOW);
-   digitalWrite(7, LOW);
+   digitalWrite(7, HIGH);
+   Serial.println ("-----------------------------------------");
    Serial.print ("Humidity: ");
    Serial.print (h);
    Serial.print (" %\t");
-   Serial.print ("40% < Humidity > 70% hense 'U' \t");
-   Serial.print ("Relay = OFF");
+   Serial.println ("40% < Humidity > 70% hense 'U' \t");
+   Serial.println ("Relay = OFF");
+   Serial.println ("-----------------------------------------");
    
   }else{
     if(h < 70 && h < 101){
@@ -81,11 +85,13 @@ void loop() {
       digitalWrite(f, HIGH); //
       digitalWrite(g, HIGH); //
       digitalWrite(7, HIGH);
+      Serial.println ("-----------------------------------------");
       Serial.print ("Humidity: ");
       Serial.print (h);
       Serial.print (" % \t");
-      Serial.print ("70% < Humidity < 100% hense 'H' \t");
-      Serial.print ("Relay = ON\t");
+      Serial.println ("70% < Humidity < 100% hense 'H' \t");
+      Serial.println ("Relay = ON\t");
+      Serial.println ("-----------------------------------------");
       
     }
   }
