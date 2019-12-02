@@ -50,7 +50,7 @@ void loop() {
   Serial.println ("-----------------------------------------");
   Serial.print ("Humidity: ");
   Serial.print (h);
-  Serial.print (" %\t");
+  Serial.println ("%\t");
   Serial.println ("Humidity < 40% hense 'L' \t");
   Serial.println ("Relay = OFF\t");
   Serial.println ("-----------------------------------------");
@@ -70,7 +70,7 @@ void loop() {
    Serial.println ("-----------------------------------------");
    Serial.print ("Humidity: ");
    Serial.print (h);
-   Serial.print (" %\t");
+   Serial.println ("%\t");
    Serial.println ("40% < Humidity > 70% hense 'U' \t");
    Serial.println ("Relay = OFF");
    Serial.println ("-----------------------------------------");
@@ -88,7 +88,7 @@ void loop() {
       Serial.println ("-----------------------------------------");
       Serial.print ("Humidity: ");
       Serial.print (h);
-      Serial.print (" % \t");
+      Serial.println ("% \t");
       Serial.println ("70% < Humidity < 100% hense 'H' \t");
       Serial.println ("Relay = ON\t");
       Serial.println ("-----------------------------------------");
