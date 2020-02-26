@@ -154,3 +154,5 @@ void loop() {
         left();
       
 }
+
+//Note: PWM needs to be adjusted for each turn. TBD
