@@ -65,8 +65,8 @@ void stopbot()
     digitalWrite(right_backward, LOW);
     digitalWrite(left_forward, LOW);
     digitalWrite(left_backward, LOW);
-    analogWrite(pwm_left,255);
-    analogWrite(pwm_right,255);
+    analogWrite(pwm_left,0);
+    analogWrite(pwm_right,0);
 }
 
 void setup() {
